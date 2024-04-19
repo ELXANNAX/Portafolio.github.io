@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="imágenes/OA-fotor-20240413112520.png" type="image/png" sizes="180x180">
+    <link rel="apple-touch-icon" href="imágenes/OA-fotor-20240413112520.png" sizes="180x180">
+    <title>OA2003</title>
+</head>
+<body class="preload">
+    <nav>
+        <ul class="container">
+            <li class="container__li"><a href="#top">Inicio</a></li>
+            <li class="container__li"><a href="#work">Skills</a></li>
+            <li class="container__li"><a href="#Portfolio">Proyectos</a></li>
+            <li class="container__li"><a href="#contact">Contáctame</a></li>
+        </ul>
+    </nav>
+ 
+    <!-- Inicio -->
+    <article id="top" class="wrapper style1">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-5-large col-12-medium">
+                    <span class="imageMe"><img src="imágenes/Me.jpeg" alt="" /></span>
+                </div>
+                <div class="col-8 col-7-large col-12-medium">
+                    <header>
+                        <h1> Hola, mi nombre es<strong> Óscar Albarracín</strong>.</h1>
+                    </header>
+                    <p>Y esta es mi <strong>historia</strong>, tengo 20 años y actualmente he decido sumergirme en el mundo del desarrollo WEB. Todo empieza a una edad muy temprana donde le he tomado mucho cariño al mundo de la tecnología y la computación. Mi primer trabajo fue a la edad de los 15 años donde aprendí a reparar ordenadores de manera electrónica durante dos años seguidos; siendo esta mi primer experiencia en la informática y ahora que he crecido qusiera enfocarme en la programación y desarrallo WEB. Por el momento aprendo Frond-end y quisiera llegar lejos en este área por mi pasión hacía el diseño y como mis primeros pasos en el desarrollo.</p>
+                    <a href="#work" class="button scrolly">Qué estoy aprendiendo.</a>
+                </div>
+            </div>
+        </div>
+    </article>
+ 
+    <!-- Skills -->
+    <article id="work" class="wrapper style2">
+        <div class="container">
+            <header>
+                <h2>Aquí está todo lo que he aprendido.</h2>
+            </header>
+            <div class="row aln-center">
+                <div class="col-4 col-6-medium col-12-small">
+                    <section class="box style1">
+                        <span class="icon featured fa-comments"></span>
+                        <h3>HTML5</h3>
+                        <span class="imageHTML"><img src="imágenes/html5.jpg" alt="" /></span>
+                    </section>
+                </div>
+                <div class="col-4 col-6-medium col-12-small">
+                    <section class="box style1">
+                        <span class="icon solid featured fa-camera-retro"></span>
+                        <h3>CSS3</h3>
+                        <span class="imageCSS"><img src="imágenes/CSS.jpg" alt="" /></span>
+                    </section>
+                </div>
+                <div class="col-4 col-6-medium col-12-small">
+                    <section class="box style1">
+                        <span class="icon featured fa-thumbs-up"></span>
+                        <h3>GIT</h3>
+                        <span class="imageGIT"><img src="imágenes/GIT.png" alt="" /></span>
+                    </section>
+                </div>
+            </div>
+            <footer>
+                <a href="#Portfolio" class="button large scrolly">Aquí puedes ver algunos de mis trabajos hasta el momento.</a>
+            </footer>
+        </div>
+    </article>
+ 
+    <!-- Portfolio -->
+    <article id="Portfolio" class="wrapper style3" style="padding-top: 45px;">
+        <div class="container">
+            <header>
+                <h2>Y estos son mis últimos trabajos a nivel personal.</h2>
+            </header>
+            <div class="row project-container">
+                <div class="col-4 col-6-medium col-12-small">
+                    <div class="project-card">
+                        <h3>CryptoText Hub</h3>
+                        <p>Que en resumen es encriptador de mensajes sencillo.</p>
+                        <a href="https://elxannax.github.io/Proyecto-Encriptador-de-SMS/" class="image featured" target="_blank"><img src="imágenes/crypto.jpg" alt="" style="max-width: 300px;" /></a>
+                    </div>
+                </div>
+                <div class="col-4 col-6-medium col-12-small">
+                    <div class="project-card">
+                        <h3>AluraPlay</h3>
+                        <p>Curso de CSS: Flexbox y layouts responsivos de Alura Latam.</p>
+                        <a href="https://elxannax.github.io/Alura-Play/" class="image featured" target="_blank"><img src="imágenes/AluraPlay.jpg" alt="" style="max-width: 400px;" /></a>
+                    </div>
+                </div>
+            </div>
+            <footer class="project-footer">
+                <a href="#contact" class="button large scrolly">Ponte en contacto conmigo</a>
+            </footer>
+        </div>
+    </article>
+   
+    <!-- Contacto -->
+    <article id="contact" class="wrapper style4">
+        <div class="container medium" id="contenedor">
+            <header>
+                <h2 id="titulo-contacto">Envíame un mensaje.</h2>
+            </header>
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-form">
+                        <form id="formulario-contacto" method="post" action="#">
+                            <div class="row contact-form__content">
+                                <div class="col-6 col-12-small div__form--flex">
+                                    <input class="contact__imput--mark" type="text" name="name" id="name" placeholder="Nombres y Apellidos"/>
+                                    <input class="contact__imput--mark" type="text" name="email" id="email" placeholder="Email"/>
+                                </div>
+                                <div class="col-12">
+                                    <input class="contact__imput--mark2" type="text" name="subject" id="subject" placeholder="Asunto" />
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="contact__imput--mark3" name="message" id="message" placeholder="Mensaje" ></textarea>
+                                </div>
+                                <div id="botones" class="col-12">
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Envíar mensaje" class="button" /></li>
+                                        <li><input type="reset" value="Borrar mensaje" class="button alt" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12" id="footer-container">
+                    <footer class="piedepagina">
+                        <p>&copy; 2024 - Creado por Óscar Albarracín</p>
+                        <ul>
+                          <li><a href="https://github.com/ELXANNAX" target="_blank"><img src="imágenes/GitHub.png" width="20px"></a></li>
+                          <li><a href="https://www.linkedin.com/in/oscar-jos%C3%A9-a280b41b1/" target="_blank"><img src="imágenes/Linkedin.png" width="20px"></a></li>
+                          <li><a href="https://wa.me/3133617443" target="_blank"><img src="imágenes/whatsapp_logo_new-2x.png" width="20px"></a></li>
+                        </ul>
+                      </footer>
+        </div>
+    </article>
+   
+</body>
+</html>

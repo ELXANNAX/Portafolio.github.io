@@ -1,0 +1,589 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1d1d20;
+  color: #d1d1d1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hace que el fondo del nav sea transparente y borroso */
+.preload nav {
+  background-color: #1d1d207d; /* Agregando transparencia aumentando el HUE del color*/
+  backdrop-filter: blur(5px); /* Agregando efecto para que solo el fondo sea borroso */
+}
+
+.container {
+  /* width: 80%; */
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.container__li {
+  padding: 1.5%; /* Paddin para dar espacio a los elementos del borde interno */
+  transition: all .2s; /* Hace que el hover se vea en 2 segundos */
+}
+
+/* Aplicando efecto de hover sobre los elementos del nav */
+.container__li:hover {
+  background-color: #884EA0;
+  border-radius: 5px;
+}
+
+/* Estilos de navegación */
+nav {
+  background-color: #1d1d20;
+  position: fixed; /* Fijar el elemento */
+  width: 100%; /* Ocupar todo el ancho de la ventana */
+  top: 0; /* Colocarlo en la parte superior */
+  z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Centro la lista */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Arial Black', sans-serif; /* Cambio de fuente */
+}
+
+/* Estilo del botón */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #884EA0; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1.2em;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 40px; /* Agregar margen inferior */
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+.button:hover {
+  background-color: #884EA0; /* Cambia el color de fondo al pasar el ratón */
+  transform: translateY(-2px); /* Ajusta ligeramente la posición */
+}
+
+/* Estilos de sección principal */
+article#top {
+  padding: 50px 0;
+}
+
+article#top .row {
+  display: flex;
+  align-items: center;
+}
+
+article#top .col-4 {
+  flex: 0 0 auto;
+  width: 30%; /* Ocupa el 30% del ancho */
+}
+
+article#top .col-4 img {
+  border-radius: 100%;
+  width: 100%;
+  max-width: 350px; /* Limitamos el tamaño máximo de la imagen */
+  height: auto;
+}
+
+article#top .col-8 {
+  flex: 1 1 auto;
+  padding-left: 20px;
+}
+
+article#top h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+article#top p {
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/* Estilos para la sección de proyectos */
+article#work {
+  padding: 50px 0;
+  background-color: #1d1d20; /* Color de fondo */
+  color: #d1d1d1; /* Color del texto */
+}
+
+article#work header {
+  text-align: center; /* Centrar el texto del encabezado */
+}
+
+article#work header h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+article#work header p {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+article#work .row {
+  display: flex;
+  justify-content: center; /* Centrar los elementos de la fila */
+}
+
+article#work .col-4 {
+  flex: 0 0 auto;
+  width: 33.33%; /* Ocupa el 33.33% del ancho */
+  padding: 0 15px; /* Añade espacio entre las columnas */
+  margin-bottom: 30px;
+}
+
+article#work .box {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #2d2d2d; /* Color de fondo del cuadro */
+  padding: 30px;
+  text-align: center; /* Centrar el contenido del cuadro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+article#work .box h3 {
+  margin-bottom: 15px;
+  font-size: 20px; /* Reducir el tamaño del texto del título */
+}
+
+article#work .box p {
+  font-size: 14px; /* Reducir el tamaño del texto del contenido */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+article#work .box img {
+  width: 200px; /* Ancho fijo para todas las imágenes */
+  height: 200px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Escalar las imágenes para cubrir el contenedor */
+}
+
+/* Estilos para las imágenes de HTML5, CSS3 y GIT */
+.imageHTML img,
+.imageCSS img,
+.imageGIT img {
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Efecto de zoom al hacer hover sobre las imágenes */
+.imageHTML img:hover,
+.imageCSS img:hover,
+.imageGIT img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
+
+article#work footer {
+  text-align: center; /* Centrar el texto del pie de página */
+  margin-top: 5px;
+}
+
+article#work footer p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+article#work .button.large.scrolly {
+  margin-top: 10px;
+}
+
+/* Estilos para la sección de proyectos */
+#Portfolio {
+  text-align: center; /* Centra el texto del encabezado */
+}
+
+#Portfolio header h2 {
+  margin-bottom: 40px; /* Espacio inferior para el título */
+}
+
+.project-card header h3{
+  margin-bottom: 20px
+}
+
+
+.project-container {
+  display: flex;
+  justify-content: center; /* Centra los contenedores */
+  gap: 40px; /* Espacio entre los contenedores */
+}
+
+.project-card {
+  width: 350px; /* Ancho fijo de 350px */
+  height: 340px; /* Altura fija de 300px */
+  background-color: #2d2d2d; /* Color de fondo del cuadro */
+  padding: 20px;
+  border-radius: 5px; /* Bordes redondeados */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-card img {
+  width: 300px; /* Ancho de 350px */
+  height: 200px; /* Altura de 200px */
+  object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
+  border-radius: 5px; /* Bordes redondeados */
+  position: relative;    
+  left: 2px;
+  top: 20px;
+}
+
+.project-info h3 {
+  font-size: 20px;
+  margin-bottom: 20px; /* Espacio inferior para el título */
+  color: white; /* Color del texto blanco */
+}
+
+.project-info p {
+  font-size: 16px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  color: white; /* Color del texto blanco */
+}
+
+.project-footer {
+  background-color: #1d1d20;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: -40px; /* Ajusta este valor según sea necesario */
+}
+
+/* Estilos para la sección de contacto */
+
+
+#contact {
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+#contact header h2 {
+  text-align: center; /* Centra el título */
+  margin-bottom: 40px;
+  margin-right: 80px;
+}
+
+.contact-form {
+  margin: 0 auto; /* Centra el formulario */
+  max-width: 800px; /* Ancho máximo */
+}
+
+
+#contact input[type="text"],
+#contact textarea {
+  background-color: #2d2d2d; /* Color de fondo */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 2px 3px 1px #000000; /* Sombra */
+  color: #bbbbbb; /* Color del texto */
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 14.6667px; /* Tamaño de fuente */
+  font-weight: 300; /* Grosor de la fuente */
+  line-height: 27.1333px; /* Altura de línea */
+  padding: 11px; /* Relleno */
+  margin-bottom: 15px; /* Espacio inferior */
+  border: none; /* Quita el borde por defecto */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+#contact input[type="text"].col-6 {
+  width: calc(50% - 10px); /* Ancho del 50% menos el margen */
+  margin-right: 20px; /* Margen derecho */
+}
+
+#contact input[type="text"].col-12 {
+  width: 100%; /* Ancho del 100% */
+  margin-right: 0; /* Quita el margen derecho */
+}
+
+#contact input[type="text"]:focus,
+#contact textarea:focus {
+  outline: none; /* Quita el contorno de enfoque */
+}
+
+#contact input[type="submit"],
+#contact input[type="reset"] {
+  background-color: #884EA0; /* Color de fondo */
+  border-radius: 8px; /* Bordes redondeados */
+  border: none; /* Quita el borde por defecto */
+  box-shadow: 0px 2px 3px 1px #000000; /* Sombra */
+  color: #ffffff; /* Color del texto */
+  cursor: pointer; /* Cursor de puntero */
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 14.6667px; /* Tamaño de fuente */
+  font-weight: 300; /* Grosor de la fuente */
+  line-height: 27.1333px; /* Altura de línea */
+  margin-top: 2px; /* Espacio superior */
+  padding: 11px 40px; /* Relleno */
+  text-align: center; /* Alinea el texto al centro */
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
+  transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+#contact input[type="submit"]:hover,
+#contact input[type="reset"]:hover {
+  background-color: #5a2d5a; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.contact-form__content{
+  max-width: 720px;
+}
+
+.div__form--flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 720px;
+  gap: 15px;
+}
+
+.contact__imput--mark {
+  flex: 1 0 20%;
+}
+
+.contact__imput--mark2 {
+  width: 720px;
+  height: 49px;
+}
+
+.contact__imput--mark3 {
+  width: 720px;
+  height: 220px;
+}
+
+
+#contact ul.social {
+  padding: 0; /* Elimina el padding */
+  list-style: none; /* Quita los marcadores de lista */
+  margin-top: 20px; /* Espacio superior */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+#contact ul.social li {
+  display: inline-block; /* Coloca los elementos en línea */
+  margin-right: 10px; /* Margen derecho */
+}
+
+#contact ul.social li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+#contact ul.social li a {
+  display: block; /* Convierte los elementos en bloques */
+  width: 40px; /* Ancho */
+  height: 40px; /* Altura */
+  line-height: 40px; /* Altura de línea */
+  border-radius: 50%; /* Bordes redondeados */
+  background-color: #884EA0; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alinea el texto al centro */
+  font-size: 18px; /* Tamaño de fuente */
+  transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+#contact ul.social li a:hover {
+  background-color: #5a2d5a; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.col-12 {
+  text-align: center; /* Centra el contenido dentro de la columna */
+}
+
+#contact .button {
+  margin-top: 20px; /* Espacio superior */
+  margin-right: 10px; /* Espacio derecho */
+  margin-bottom: 20px; /* Espacio inferior */
+  margin-left: 10px; /* Espacio izquierdo */
+}
+
+#contact .actions {
+  display: flex; /* Utiliza flexbox */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+#contact .actions li {
+  margin-right: 10px; /* Espacio entre los botones */
+}
+
+#contact .actions li:last-child {
+  margin-right: 0; /* Quita el margen derecho del último botón */
+}
+
+#contact .actions li {
+  margin-right: 10px; /* Espacio entre los botones */
+  list-style-type: none; /* Elimina los puntos de la lista */
+}
+
+/* Estilos para el pie de página */
+.piedepagina{
+  background-color: #1d1d20;
+  padding: 2px;
+  text-align: center;
+  margin-top: 60px;
+  margin-right: 60px;
+}
+
+.piedepagina ul {
+  list-style: none;
+  padding: 0;
+  margin: 0%;
+}
+
+.piedepagina ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.piedepagina ul li a img {
+  border: none;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 736px) {
+
+  #contact{
+    margin: 0 -140px !important;
+  }
+
+  #contact .actions{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #botones{
+    width: 100%;
+  }
+
+  #botones input{
+    width: 100%;
+  }
+
+  
+  nav ul.container {
+      display: flex;
+      align-content: flex-start;
+      justify-content: center;
+      padding-top: 8px; /* Espacio adicional en la parte superior */
+  }
+
+  nav ul.container li {
+      margin: 0 1px; /* Margen entre elementos */
+      white-space: nowrap; /* Evita que las palabras se dividan en varias líneas */
+  }
+ 
+  .row {
+      margin-top: -15px;
+      margin-left: -15px;
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      align-items: stretch;
+      padding: 15px 0 0 15px;
+  }
+
+  article#top .col-4 {
+      display: block;
+      width: 100%; /* Ocupa el 30% del ancho */
+      ;
+  }
+   
+  article#work .col-4 {
+      width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+      padding: 0; /* Elimina el espacio entre columnas */
+  }
+  /*Contacto responsive*/
+  body, input, textarea, select {
+      line-height: 1.75em;
+      font-size: 10pt;
+      letter-spacing: 0;
+  }
+
+  .contact__imput--mark {
+    width: 150px;
+    height: 49px;
+  }
+
+  .contact__imput--mark2 {
+    width: 315px;
+    height: 49px;
+}
+
+.contact__imput--mark3 {
+  width: 315px;
+  height: 120px;
+}
+
+.piedepagina{
+  flex: content;
+  justify-content: center;
+  margin: 0 auto 0 0 !important;
+}
+
+#footer-container{
+  width: 100%;
+}
+
+#titulo-contacto{
+  margin: 0 auto 2em 0 !important;
+}
+
+}
+
+@media screen and (max-width: 1280px) {
+  #contenedor{
+    margin: 0 160px;
+  }
+  
+}
+
+@media screen and (max-width: 920px ) {
+
+  .imageHTML img,
+  .imageCSS img,
+  .imageGIT img {
+    margin: 0 -15px;
+  }
+
+  .contact__imput--mark {
+    width: 180px;
+    height: 49px;
+  }
+
+  .contact__imput--mark2 {
+    width: 480px;
+    height: 49px;
+}
+
+.contact__imput--mark3 {
+  width: 480px;
+  height: 120px;
+}
+}
