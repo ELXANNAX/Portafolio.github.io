@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll('nav a, a');
+    const links = document.querySelectorAll('nav a, .button.large.scrolly, .button.scrolly');
 
     links.forEach(link => {
       link.addEventListener('click', smoothScroll);
